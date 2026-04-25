@@ -1,46 +1,46 @@
 # Notes Application
 
-Notes Application adalah proyek monorepo yang memisahkan aplikasi web (client) dan layanan API (server) untuk pengelolaan catatan. Proyek ini dirancang sebagai fondasi pembelajaran full-stack JavaScript dengan struktur yang jelas, mudah dikembangkan, dan mudah dipisah saat akan di-deploy.
+Notes Application is a monorepo project that separates the web app (client) and API service (server) for note management. This project is designed as a full-stack JavaScript learning foundation with a clear structure, easy development workflow, and straightforward deployment separation.
 
-## Gambaran Umum
+## Overview
 
-Aplikasi memungkinkan pengguna membuat, membaca, memperbarui, dan menghapus catatan (CRUD). Frontend dibangun dengan Next.js untuk pengalaman antarmuka yang responsif, sementara backend dibangun dengan Express.js untuk menyediakan endpoint API yang ringan.
+The application allows users to create, read, update, and delete notes (CRUD). The frontend is built with Next.js for a responsive user interface, while the backend is built with Express.js to provide lightweight API endpoints.
 
-## Struktur Monorepo
+## Monorepo Structure
 
 1. `apps-web`
-Frontend berbasis Next.js yang menangani tampilan, interaksi pengguna, dan konsumsi API.
+Next.js-based frontend that handles views, user interactions, and API consumption.
 
 2. `services-api`
-Backend berbasis Express.js yang menyediakan endpoint `notes` dan logika pengelolaan data catatan in-memory.
+Express.js-based backend that provides `notes` endpoints and in-memory note data management logic.
 
-## Arsitektur Komunikasi
+## Communication Architecture
 
-Frontend berkomunikasi ke backend melalui HTTP API. Secara default, frontend mengarah ke `http://localhost:5000/` sebagai base URL API dan dapat diubah dari antarmuka aplikasi melalui fitur `Change URL`.
+The frontend communicates with the backend through an HTTP API. By default, the frontend points to `http://localhost:5000/` as the API base URL, and it can be changed from the app interface through the `Change URL` feature.
 
-Pemisahan ini memberi beberapa keuntungan:
+This separation provides several benefits:
 
-1. Frontend dan backend bisa dikembangkan secara independen.
-2. Integrasi API dapat diuji tanpa bergantung pada penyatuan codebase.
-3. Struktur siap ditingkatkan untuk skenario production (misalnya auth service, persistence database, dan deployment terpisah).
+1. Frontend and backend can be developed independently.
+2. API integration can be tested without relying on a unified codebase.
+3. The structure is ready to scale for production scenarios (for example: auth service, database persistence, and separate deployment).
 
-## Status Fitur Saat Ini
+## Current Feature Status
 
-Yang sudah tersedia dan terhubung dengan baik:
+Currently available and well integrated:
 
-1. Manajemen catatan dasar (CRUD) melalui endpoint `notes`.
-2. Integrasi frontend-backend untuk alur catatan utama.
+1. Basic note management (CRUD) through `notes` endpoints.
+2. Frontend-backend integration for the main note workflow.
 
-Yang masih bersifat pengembangan lanjutan:
+Still under further development:
 
-1. Otorisasi/autentikasi penuh di backend.
-2. Dukungan upload, kolaborasi, dan ekspor catatan pada sisi API.
-3. Persistensi data permanen (saat ini masih in-memory).
+1. Full authorization/authentication in the backend.
+2. Support for upload, collaboration, and note export on the API side.
+3. Permanent data persistence (currently still in-memory).
 
-## Tujuan Pengembangan
+## Development Goals
 
-Repositori ini cocok digunakan sebagai:
+This repository is suitable for:
 
-1. Template awal aplikasi catatan full-stack.
-2. Media belajar integrasi Next.js + Express.js.
-3. Dasar refaktor ke arsitektur yang lebih modular (service-per-domain).
+1. A starter template for a full-stack notes application.
+2. A learning medium for Next.js + Express.js integration.
+3. A foundation for refactoring into a more modular architecture (service-per-domain).

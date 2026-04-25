@@ -1,12 +1,12 @@
 # Services API (Backend)
 
-Layanan backend Notes Application berbasis Express.js.
+Express.js-based backend service for the Notes Application.
 
-## Ringkasan
+## Summary
 
-Folder ini menyediakan API untuk pengelolaan catatan dan menjadi sumber data untuk frontend di apps-web.
+This folder provides the API for managing notes and serves as the data source for the frontend in apps-web.
 
-## Endpoint Inti
+## Core Endpoints
 
 1. POST /notes
 2. GET /notes
@@ -14,11 +14,11 @@ Folder ini menyediakan API untuk pengelolaan catatan dan menjadi sumber data unt
 4. PUT /notes/:id
 5. DELETE /notes/:id
 
-## Catatan
+## Notes
 
-Data catatan saat ini disimpan di memori, jadi akan hilang saat server restart.
+Notes data is currently stored in memory, so it will be lost when the server restarts.
 
-## Menjalankan
+## Run
 
 1. npm install
 2. npm run start:dev

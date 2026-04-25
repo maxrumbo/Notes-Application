@@ -1,26 +1,26 @@
 # Apps Web (Frontend)
 
-Aplikasi frontend Notes Application berbasis Next.js.
+Next.js-based frontend application for Notes Application.
 
-## Ringkasan
+## Summary
 
-Folder ini berisi antarmuka pengguna untuk menampilkan dan mengelola catatan. Frontend mengonsumsi API dari folder services-api.
+This folder contains the user interface for displaying and managing notes. The frontend consumes the API from the services-api folder.
 
-## Fitur Utama
+## Main Features
 
-1. Menampilkan daftar catatan.
-2. Menambah, mengubah, dan menghapus catatan.
-3. Mengakses API melalui base URL yang bisa diubah dari UI.
+1. Displaying a list of notes.
+2. Creating, editing, and deleting notes.
+3. Accessing the API through a base URL that can be changed from the UI.
 
-## Integrasi API
+## API Integration
 
-Secara default, aplikasi mengarah ke http://localhost:5000/.
+By default, the application points to http://localhost:5000/.
 
-## Catatan
+## Notes
 
-Beberapa layar lanjutan seperti autentikasi, upload, ekspor, dan kolaborasi masih bergantung pada endpoint backend tambahan.
+Some advanced screens such as authentication, upload, export, and collaboration still depend on additional backend endpoints.
 
-## Menjalankan
+## Run
 
 1. npm install
 2. npm run dev
